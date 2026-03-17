@@ -42,8 +42,7 @@ header > .logo {
 
 
 header > .nav {
-    position: relative;
-    left: -50px;
+    position: static;
 }
 
 header > .nav a {
@@ -165,17 +164,16 @@ header > .menu {
 
 .features {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin-left: 20%;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
 }
-
 .features > div {
-    width: 300px;
-    text-align: center;
-    margin: 50px 10px;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 40px;
 }
-
 
 .features > div img {
     width: 200px;
@@ -200,10 +198,8 @@ header > .menu {
 }
 .social {
     display: flex;
-    gap: 5px; /* відстань між іконками */
-    margin-left: 600px ;
+    gap: 20px;
 }
-
 .social div:hover {
     transform: translateY(-10px);
 }
@@ -248,6 +244,39 @@ footer .up-btn {
     cursor: pointer;
     color: #3b3b3b;
     transition: transform 600ms ease;
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    header > .nav {
+        display: none;
+    }
+
+    header > .menu {
+        display: block;
+    }
+
+    .full-page h1 {
+        font-size: 28px;
+        padding-top: 150px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+    .menu {
+        display: block;
+    }
+
+
 }
   
 
