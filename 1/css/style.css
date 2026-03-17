@@ -203,9 +203,7 @@ header > .menu {
     gap: 5px; /* відстань між іконками */
     margin-left: 600px ;
 }
-.social a {
-    margin-top: 5px;
-}
+
 .social div:hover {
     transform: translateY(-10px);
 }
