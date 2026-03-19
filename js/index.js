@@ -1,4 +1,3 @@
-
 $(document).scroll(function() {
 if($(document).width() < 1024) {
     return false;
